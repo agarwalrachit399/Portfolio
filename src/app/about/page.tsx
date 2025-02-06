@@ -12,7 +12,7 @@ const academicEvents = [
     Achievements: ["Secured Merit Based Scholarship for the year 2021-2023", "Secured 4th Rank in the CINTEL Department"],
     icon: < FaGraduationCap />,
     Transcripts: true,
-    transcriptURL: "/transcripts/USC_Transcript.pdf",
+    transcriptURL: "/transcripts/SRM_Transcript.pdf",
     // iconImage: "/SRM.jpg"
   },
   {
