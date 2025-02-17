@@ -59,6 +59,18 @@ const professionalEvents = [
     icon: <FaBriefcase />,
     transcriptURL: "/transcripts/USC_Transcript.pdf",
   }
+,
+  {
+    date: "Jan 2024 - Present",
+    title: "Full Stack Developer",
+    subtitle: "USC - Office of International Services",
+    Achievements: ["Worked on the official CNI workbench (WebApp +Desktop) to serve scientific equipment to the research community.",
+                  "Migrated backend from PHP to Node.js (Typescript) with Prisma ORM and integrated Multer to handle file upload.",
+                "Led continuous development using React.js redux framework ensuring a consistent and responsive user interface.",
+              "Component based architecture helped reduce page rendering rate by 50% and the time to market by 40%."],
+    icon: <FaBriefcase />,
+    transcriptURL: "/transcripts/USC_Transcript.pdf",
+  }
 ];
 
 const AboutMe = () => {
