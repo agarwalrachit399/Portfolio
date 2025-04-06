@@ -1,8 +1,9 @@
 "use client"
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-import { useState } from "react";
+import {useState } from "react";
 import Image from 'next/image';
+import { useTheme } from '../context/ThemeContext';
 
 
 interface TimelineEvent {
@@ -32,7 +33,10 @@ const AboutTimeline: React.FC<AboutTimelineProps> = ({ events }) => {
   const handleCloseTranscript = () => {
     setSelectedTranscript(null); // Close the transcript
   };
+  const { theme } = useTheme();
 
+  const backgroundColor = theme === 'default' ? '#B684F7' : '#bf3f54'; // Set background color based on theme
+  console.log("Theme in AboutTimeline:", theme); // Debugging line
   return (
     <>
       <VerticalTimeline lineColor={"#dbd6d6"}>
@@ -54,9 +58,9 @@ const AboutTimeline: React.FC<AboutTimelineProps> = ({ events }) => {
                 event.icon // fallback to icon if no image is provided
               )
             }
-            iconStyle={{ background: "#B684F7", color: "#fff" }} // Customize icon colors
+            iconStyle={{ background: backgroundColor, color: "#fff" }} // Customize icon colors
           >
-            <h3 className="text-lg font-bold text-purple-800 mb-2">
+            <h3 className="text-lg font-bold text-secondary mb-2">
               {event.title}
             </h3>
             <h4 className="text-md font-semibold">{event.subtitle}</h4>
@@ -71,7 +75,7 @@ const AboutTimeline: React.FC<AboutTimelineProps> = ({ events }) => {
             {event.Transcripts && event.transcriptURL && (
               <button
                 onClick={() => handleViewTranscript(event.transcriptURL)}
-                className="mt-4 px-4 py-2 border border-purple-600 text-purple-600 rounded-full hover:bg-purple-600 hover:text-white transition"
+                className="mt-4 px-4 py-2 border border-primary text-primary rounded-full hover:bg-primary hover:text-white transition"
               >
                 View Transcripts
               </button>
@@ -91,7 +95,7 @@ const AboutTimeline: React.FC<AboutTimelineProps> = ({ events }) => {
             ></iframe>
             <button
               onClick={handleCloseTranscript}
-              className="mt-4 px-4 py-2 bg-purple-600 text-white rounded-full hover:bg-purple-700 transition"
+              className="mt-4 px-4 py-2 bg-primary text-white rounded-full hover:bg-hover transition"
             >
               Close
             </button>

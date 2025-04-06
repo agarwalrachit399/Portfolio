@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+ 
 
+:root {
+    --color-primary: #9333ea; /* Tailwind's purple-600 */
+    --color-secondary: #6e11b0; /* Tailwind's purple-800 */
+    --color-tertiary: #5BE9B9;
+    --color-hover: #7e22ce; /* Tailwind's purple-700 */
+    --color-bg: #ffffff;
+    --color-text: #000000;
+  }
   
+  [data-theme='usc'] {
+    --color-primary: #c8102e; /* USC Cardinal Red */
+    --color-secondary: #930a27; /* USC Cardinal Red - 800 */
+    --color-tertiary: #f7c94c; /* USC Gold */
+    --color-hover: #a50d2e; /* USC Cardinal Red - 700 */
+  }
   
+  /* You can add more themes here later */
+   

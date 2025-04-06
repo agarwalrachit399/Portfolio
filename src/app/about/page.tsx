@@ -86,13 +86,13 @@ const AboutMe = () => {
       <div className="flex justify-center space-x-4 mt-4">
         <button 
           onClick={() => handleTimelineChange('academic')} 
-          className={`px-4 py-2 rounded ${activeTimeline === 'academic' ? 'bg-purple-600 text-white' : 'bg-white text-purple-600 border border-purple-600'}`}
+          className={`px-4 py-2 rounded ${activeTimeline === 'academic' ? 'bg-primary text-white' : 'bg-white text-primary border border-primary'}`}
         >
           Academic Journey
         </button>
         <button 
           onClick={() => handleTimelineChange('professional')} 
-          className={`px-4 py-2 rounded ${activeTimeline === 'professional' ? 'bg-purple-600 text-white' : 'bg-white text-purple-600 border border-purple-600'}`}
+          className={`px-4 py-2 rounded ${activeTimeline === 'professional' ? 'bg-primary text-white' : 'bg-white text-primary border border-primary'}`}
         >
           Professional Journey
         </button>

@@ -79,7 +79,7 @@ const ProjectCard: FC<{
           href={githubUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="px-4 py-2 m-2 text-white bg-purple-500 rounded-full hover:bg-purple-600 transition"
+          className="px-4 py-2 m-2 text-white bg-primary rounded-full hover:bg-hover transition"
         >
           View Project
         </a>
@@ -96,7 +96,7 @@ const Projects = () => {
       {/* Top Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
         <div>
-          <h1 className="text-8xl text-purple-800 font-bold">Portfolio.</h1>
+          <h1 className="text-8xl text-secondary font-bold">Portfolio.</h1>
           <h2 className="text-2xl font-semibold text-gray-600 mt-2">
             Check out my latest work
           </h2>

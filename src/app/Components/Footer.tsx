@@ -1,9 +1,14 @@
 import Image from 'next/image';
+import GithubSVG from './SVG/GithubSVG';
+import InstaSvg from './SVG/InstaSVG';
+import LinkedinSvg from './SVG/LinkedInSVG';
+import TableauSVG from './SVG/TableauSVG';
+
 
 const Footer = () => {
   return (
 <footer className="flex flex-col sm:flex-row justify-between items-center px-6 sm:px-12 lg:px-24 py-4 space-y-4 sm:space-y-0">
-  <div className="text-purple-600 font-bold text-center sm:text-left">
+  <div className="text-primary font-bold text-center sm:text-left">
     &copy; 2025 Rachit Agarwal
   </div>
 
@@ -14,7 +19,8 @@ const Footer = () => {
       rel="noopener noreferrer"
       className="hover:opacity-80"
     >
-      <Image src="/github.svg" alt="GitHub" width={32} height={32} />
+      <GithubSVG width={32} height={32} className='text-primary' />
+
     </a>
     <a
       href="https://www.linkedin.com/in/rachit-agarwal-90266918b/"
@@ -22,7 +28,7 @@ const Footer = () => {
       rel="noopener noreferrer"
       className="hover:opacity-80"
     >
-      <Image src="/linkedin.svg" alt="LinkedIn" width={32} height={32} />
+      <InstaSvg width={32} height={32} className='text-primary' />
     </a>
     <a
       href="https://public.tableau.com/app/profile/rachit.agarwal3124/vizzes"
@@ -30,7 +36,7 @@ const Footer = () => {
       rel="noopener noreferrer"
       className="hover:opacity-80"
     >
-      <Image src="/tableau.svg" alt="Tableau" width={32} height={32} />
+      <TableauSVG width={32} height={32} className='text-primary' />
     </a>
     <a
       href="https://instagram.com/_.rachit.agarwal._"
@@ -38,7 +44,7 @@ const Footer = () => {
       rel="noopener noreferrer"
       className="hover:opacity-80"
     >
-      <Image src="/instagram.svg" alt="Instagram" width={32} height={32} />
+      <LinkedinSvg width={32} height={32} className='text-primary' />
     </a>
   </div>
 </footer>
